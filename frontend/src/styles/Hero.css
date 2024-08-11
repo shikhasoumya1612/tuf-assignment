@@ -1,0 +1,156 @@
+.hero {
+  margin-top: 50px;
+  font-family: "DM Sans";
+  align-items: center;
+  text-align: center;
+}
+
+.hero p,
+.hero h1 {
+  margin: 0;
+  width: 100%;
+}
+
+.hero p {
+  padding: 5px 0;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 80px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  min-height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+}
+
+.card-icon-wrapper {
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-icon-wrapper-blue {
+  background: rgb(3, 141, 242);
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-subheading {
+  font-size: 1rem;
+  color: var(--subheading-color);
+  margin: 4px 0;
+}
+
+body.dark .card {
+  background: #333;
+  color: #fff;
+}
+
+body.dark .card-subheading {
+  color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .card-container {
+    margin: 40px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    margin: 20px;
+    padding: 20px 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 30px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 20px;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-heading {
+    font-size: 1.25rem;
+  }
+
+  .card-subheading {
+    font-size: 0.5rem;
+  }
+}

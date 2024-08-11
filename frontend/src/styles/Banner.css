@@ -1,0 +1,90 @@
+.banner {
+  position: sticky;
+  background-color: var(--striver-red);
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.banner .timer,
+.banner .offer,
+.banner .close {
+  flex: 1;
+  text-align: center;
+}
+
+.banner .timer {
+  width: auto;
+}
+
+.banner .offer {
+  width: auto;
+  text-decoration: none;
+  color: white;
+}
+
+.banner .offer h2,
+.banner .offer p {
+  margin: 0;
+}
+
+.banner .close {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .timer {
+    order: 3;
+    width: 100%;
+  }
+
+  .banner .offer {
+    order: 1;
+    width: 100%;
+  }
+
+  .banner .close {
+    order: 2;
+    width: auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    padding: 10px 5px;
+  }
+
+  .banner .offer h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner .offer p {
+    font-size: 0.9rem;
+  }
+
+  .banner .close {
+    padding: 5px;
+  }
+}

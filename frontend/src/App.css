@@ -1,0 +1,24 @@
+:root {
+  --striver-red: rgb(238 75 43);
+  --dark: #111111;
+}
+
+.text-red {
+  color: var(--striver-red);
+}
+
+.light {
+  background-color: white;
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: var(--dark);
+  color: white;
+  min-height: 100vh;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
