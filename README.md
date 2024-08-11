@@ -15,5 +15,5 @@
  
 
   ## Where to access 
-[Backend](https://tuf-assignment-odc6.onrender.com/)
+[Backend](https://tuf-assignment-odc6.onrender.com/api/v1/banner)
 [Frontend](https://tuf-assignment-1-0wvw.onrender.com/)
