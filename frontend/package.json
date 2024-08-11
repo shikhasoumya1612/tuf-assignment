@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "https://tuf-assignment-odc6.onrender.com/",
   "dependencies": {
     "@rumess/react-flip-countdown": "^1.2.6",
     "@testing-library/jest-dom": "^5.17.0",
