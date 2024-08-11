@@ -3,6 +3,7 @@ import axios from "axios";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "../styles/Dashboard.css";
+import { BACKEND_URL } from "../Constants";
 
 const validationSchema = Yup.object({
   bannerOn: Yup.boolean(),
@@ -17,7 +18,7 @@ const Dashboard = (props) => {
   const handleSubmit = async (values) => {
     props.setShowLoader(true);
     try {
-      await axios.put("/api/v1/banner", {
+      await axios.put(BACKEND_URL + "/api/v1/banner", {
         bannerOn: values.bannerOn,
         bannerHeading: values.bannerHeading,
         bannerSubHeading: values.bannerSubHeading,

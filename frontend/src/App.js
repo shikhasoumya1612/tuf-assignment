@@ -9,6 +9,7 @@ import axios from "axios";
 import ImageCards from "./components/ImageCards";
 import Loader from "./components/Loader";
 import { useDarkMode } from "./context/DarkModeContext";
+import { BACKEND_URL } from "./Constants";
 
 function App() {
   const [showLoader, setShowLoader] = useState(false);
@@ -24,7 +25,7 @@ function App() {
 
   const fetchBannerSettings = async () => {
     try {
-      const response = await axios.get("/api/v1/banner");
+      const response = await axios.get(BACKEND_URL + "/api/v1/banner");
       const bannerData = response.data.data;
 
       if (bannerData) {
@@ -113,7 +114,7 @@ function App() {
             }
           />
 
-          <Route path="*" element={<p>Go back where u fucking came from!</p>} />
+          <Route path="*" element={<p>ERROR 404</p>} />
         </Routes>
       </div>
     </BrowserRouter>
